@@ -1,0 +1,68 @@
+html {
+  font-family: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Sono', sans-serif;
+  margin: 2rem;
+}
+
+.plan-title {
+  font-size: calc(1.15rem +1vw);
+  font-weight: bold;
+}
+
+.plan-price {
+  font-size: calc(2.05rem + 1vw);
+  font-weight: bolder;
+}
+
+.plan-features {
+  font-size: calc(.5em + .1vw);
+}
+
+li {
+  list-style-type: none;
+}
+
+/* It's flexbox time. */
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pricing-plan {
+  background-color: #dadada;
+  width: 25%;
+  min-width: 17rem;
+  padding: 1.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plan-button {
+  width: 35%;
+  font-size: clamp(.8rem, calc(.7rem + .8vw), 1.1rem);
+  background-color: #FF5F1F;
+  padding: .1rem .5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+@media screen and (orientation: landscape) and (max-width: 85rem) and (max-height: 55rem) {
+  .pricing-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 85.1rem) {
+  .pricing-container {
+    height: 90vh;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
