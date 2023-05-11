@@ -24,6 +24,7 @@ body {
 
 li {
   list-style-type: none;
+  line-height: 2;
 }
 
 /* It's flexbox time. */
