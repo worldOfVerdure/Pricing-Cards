@@ -27,6 +27,15 @@ li {
   line-height: 2;
 }
 
+.plan-button {
+  width: 35%;
+  font-size: clamp(.8rem, calc(.7rem + .8vw), 1.1rem);
+  background-color: #FF5F1F;
+  padding: .1rem .5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
 /* It's flexbox time. */
 .pricing-container {
   height: 100vh;
@@ -34,6 +43,7 @@ li {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  margin: 2rem 0;
 }
 
 .pricing-plan {
@@ -46,15 +56,6 @@ li {
   flex-direction: column;
 }
 
-.plan-button {
-  width: 35%;
-  font-size: clamp(.8rem, calc(.7rem + .8vw), 1.1rem);
-  background-color: #FF5F1F;
-  padding: .1rem .5rem;
-  margin-top: 1rem;
-  border-radius: 1rem;
-}
-/* 1120 x 881 is flex-direction col */
 @media screen and (orientation: landscape) and (max-width: 850px) and (max-height: 550px) {
   .pricing-container {
     flex-direction: row;
