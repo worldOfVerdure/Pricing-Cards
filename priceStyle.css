@@ -9,7 +9,7 @@ body {
 }
 
 .plan-title {
-  font-size: calc(1.15rem + 1vw);
+  font-size: calc(1.15rem +1vw);
   font-weight: bold;
 }
 
@@ -27,6 +27,24 @@ li {
   line-height: 2;
 }
 
+/* It's flexbox time. */
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pricing-plan {
+  background-color: #dadada;
+  width: 25%;
+  min-width: 17rem;
+  padding: 1.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .plan-button {
   width: 35%;
   font-size: clamp(.8rem, calc(.7rem + .8vw), 1.1rem);
@@ -36,34 +54,15 @@ li {
   border-radius: 1rem;
 }
 
-/* It's flexbox time. */
-.pricing-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.pricing-plan {
-  background-color: #dadada;
-  width: 25%; /* Play with this value. */
-  min-width: 17rem;
-  padding: 1.8rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media screen and (orientation: landscape) and (max-width: 850px) and (max-height: 550px) {
+@media screen and (orientation: landscape) and (max-width: 85rem) and (max-height: 55rem) {
   .pricing-container {
     flex-direction: row;
   }
 }
 
-@media screen and (min-width: 851px) and (min-height: 850px) {
+@media screen and (min-width: 85.1rem) {
   .pricing-container {
+    height: 90vh;
     flex-direction: row;
     justify-content: space-around;
   }
