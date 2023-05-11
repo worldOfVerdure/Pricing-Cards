@@ -9,7 +9,7 @@ body {
 }
 
 .plan-title {
-  font-size: calc(1.15rem +1vw);
+  font-size: calc(1.15rem + 1vw);
   font-weight: bold;
 }
 
@@ -29,6 +29,7 @@ li {
 
 /* It's flexbox time. */
 .pricing-container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +38,7 @@ li {
 
 .pricing-plan {
   background-color: #dadada;
-  width: 25%;
+  width: 25%; /* Play with this value. */
   min-width: 17rem;
   padding: 1.8rem;
   display: flex;
@@ -53,16 +54,15 @@ li {
   margin-top: 1rem;
   border-radius: 1rem;
 }
-
-@media screen and (orientation: landscape) and (max-width: 85rem) and (max-height: 55rem) {
+/* 1120 x 881 is flex-direction col */
+@media screen and (orientation: landscape) and (max-width: 850px) and (max-height: 550px) {
   .pricing-container {
     flex-direction: row;
   }
 }
 
-@media screen and (min-width: 85.1rem) {
+@media screen and (min-width: 851px) and (min-height: 850px) {
   .pricing-container {
-    height: 90vh;
     flex-direction: row;
     justify-content: space-around;
   }
