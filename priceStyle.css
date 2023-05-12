@@ -29,6 +29,7 @@ li {
 
 /* It's flexbox time. */
 .pricing-container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,15 +55,14 @@ li {
   border-radius: 1rem;
 }
 
-@media screen and (orientation: landscape) and (max-width: 85rem) and (max-height: 55rem) {
+@media screen and (orientation: landscape) and (max-width: 850px) and (max-height: 550px) {
   .pricing-container {
     flex-direction: row;
   }
 }
 
-@media screen and (min-width: 85.1rem) {
+@media screen and (min-width: 851px) {
   .pricing-container {
-    height: 90vh;
     flex-direction: row;
     justify-content: space-around;
   }
