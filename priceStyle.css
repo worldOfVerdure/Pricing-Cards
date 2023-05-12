@@ -38,22 +38,24 @@ li {
 
 .pricing-plan {
   background-color: #dadada;
-  width: 25%;
-  min-width: 17rem;
+  width: 80%;
+  max-width: 20rem;
   padding: 1.8rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex: 1;
+  border-radius: .5rem;
 }
 
 .plan-button {
-  width: 35%;
+  color: white;
+  width: 30%;
   font-size: clamp(.8rem, calc(.7rem + .8vw), 1.1rem);
   background-color: #FF5F1F;
-  padding: .1rem .5rem;
+  padding: .3rem .5rem;
   margin-top: 1rem;
   border-radius: 1rem;
+  border: none;
 }
 
 @media screen and (orientation: landscape) and (max-width: 85rem) and (max-height: 55rem) {
@@ -64,7 +66,6 @@ li {
 
 @media screen and (min-width: 85.1rem) {
   .pricing-container {
-    height: 100%;
     flex-direction: row;
     justify-content: space-around;
   }
