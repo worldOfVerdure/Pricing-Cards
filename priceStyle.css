@@ -9,7 +9,7 @@ body {
 }
 
 .plan-title {
-  font-size: calc(1.15rem +1vw);
+  font-size: calc(1.15rem + 1vw);
   font-weight: bold;
 }
 
@@ -29,6 +29,7 @@ li {
 
 /* It's flexbox time. */
 .pricing-container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,6 +44,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex: 1;
 }
 
 .plan-button {
@@ -62,7 +64,7 @@ li {
 
 @media screen and (min-width: 85.1rem) {
   .pricing-container {
-    height: 90vh;
+    height: 100%;
     flex-direction: row;
     justify-content: space-around;
   }
