@@ -9,17 +9,17 @@ body {
 }
 
 .plan-title {
-  font-size: calc(1.15rem + 1vw);
+  font-size: calc(2.25rem + 1vw);
   font-weight: bold;
 }
 
 .plan-price {
-  font-size: calc(2.05rem + 1vw);
+  font-size: calc(3.25rem + 1vw);
   font-weight: bolder;
 }
 
 .plan-features {
-  font-size: calc(.5em + .1vw);
+  font-size: calc(1.75rem + 1vw);
 }
 
 li {
