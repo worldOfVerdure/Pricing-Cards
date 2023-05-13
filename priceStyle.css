@@ -64,9 +64,17 @@ li {
     flex-direction: row;
   }
 
-  /* .pricing-plan {
-    height: ;
-  } */
+  .plan-title {
+    font-size: calc(2rem + .8vw);
+  }
+  
+  .plan-price {
+    font-size: calc(3rem + .8vw);
+  }
+  
+  .plan-features {
+    font-size: calc(1.5rem + .8vw);
+  }
 }
 
 @media screen and (min-width: 85.1rem) {
