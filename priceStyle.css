@@ -37,11 +37,14 @@ li {
 }
 
 .pricing-plan {
-  flex: 1 1 25.7rem;
+  flex: 0 1 0;
   background-color: #dadada;
   padding: 1.8rem;
-  text-align: center;
   border-radius: .5rem;
+  width: 80vw;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .plan-button {
