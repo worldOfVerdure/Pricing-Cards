@@ -50,8 +50,8 @@ li {
 
 .plan-button {
   color: #fff;
-  width: 40%;
-  font-size: clamp(1.9rem, calc(1.85rem + 1vw), 2rem);
+  width: clamp(10rem, 40%, 40rem);
+  font-size: clamp(1rem, calc(1.65rem + .5vw), 2rem);
   background-color: #FF5F1F;
   padding: .5rem .7rem;
   margin-top: 1rem;
@@ -65,19 +65,19 @@ li {
   }
 
   .plan-title {
-    font-size: calc(1.05rem + 1vw);
+    font-size: calc(1.05rem + .7vw);
   }
   
   .plan-price {
-    font-size: calc(1.25rem + 1vw);
+    font-size: calc(1.25rem + .7vw);
   }
   
   .plan-features {
-    font-size: calc(.9rem + .11vw);
+    font-size: calc(.4rem + .4vw);
   }
 
   .plan-button {
-    
+    font-size: calc(1rem + .1vw);
   }
 }
 
