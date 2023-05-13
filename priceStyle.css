@@ -5,7 +5,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Sono', sans-serif;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 .plan-title {
@@ -29,7 +29,7 @@ li {
 
 /* It's flexbox time. */
 .pricing-container {
-  height: 100vh;
+  height: 100vh; /* Figure out why 100% doesn't work.*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,14 +37,19 @@ li {
 }
 
 .pricing-plan {
+  /* height: 5rem; */
   background-color: #dadada;
-  width: 80%;
-  max-width: 20rem;
   padding: 1.8rem;
-  display: flex;
+  flex: 1 1 10rem;
+  
+  display: inline-flex;
   align-items: center;
   flex-direction: column;
   border-radius: .5rem;
+}
+
+.inMostFlex {
+  flex: 1 1 0;
 }
 
 .plan-button {
@@ -62,6 +67,10 @@ li {
   .pricing-container {
     flex-direction: row;
   }
+
+  /* .pricing-plan {
+    height: ;
+  } */
 }
 
 @media screen and (min-width: 85.1rem) {
