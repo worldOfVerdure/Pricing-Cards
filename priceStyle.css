@@ -37,7 +37,7 @@ li {
 }
 
 .pricing-plan {
-  flex: 0 1 0;
+  flex: 1 1 0;
   background-color: #dadada;
   padding: 1.8rem;
   border-radius: .5rem;
