@@ -49,11 +49,11 @@ li {
 }
 
 .plan-button {
-  color: white;
-  width: 30%;
-  font-size: clamp(.8rem, calc(.7rem + .8vw), 1.1rem);
+  color: #fff;
+  width: 35%;
+  font-size: clamp(1.9rem, calc(1.85rem + 1vw), 2rem);
   background-color: #FF5F1F;
-  padding: .3rem .5rem;
+  padding: .5rem .7rem;
   margin-top: 1rem;
   border-radius: 1rem;
   border: none;
